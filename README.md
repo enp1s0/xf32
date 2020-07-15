@@ -1,7 +1,7 @@
 # A rounding function for X Float 32
 
 X Float 32 is a floating point format which has 1-bit sign, 8-bit exponent and X-bit mantissa.
-It is corresponds to TF32(Tensor Float 32) when X equals to 10.
+It corresponds to TF32(Tensor Float 32) when X equals to 10.
 
 
 ## Sample program
