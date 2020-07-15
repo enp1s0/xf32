@@ -14,3 +14,7 @@ int main() {
 	const auto xf32 = xf32::rounding<10>(v);
 }
 ```
+
+## Support
+- C++ >= 11
+- This library also can be used in CUDA device functions
