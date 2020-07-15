@@ -16,8 +16,8 @@ union xf_bitstring {
 
 template <unsigned mantissa_length>
 __XF32_HOST_DEVICE__ inline float rounding(const float value) {
-	constexpr unsigned fp32_mantissa_length = 23;
-	constexpr unsigned mantissa_mask = 0b0'00000000'11111111111111111111111u - (1u << (fp32_mantissa_length - mantissa_length)) - 1;
+	constexpr uint32_t fp32_mantissa_length = 23;
+	const uint32_t mantissa_mask = 0b0'00000000'11111111111111111111111u - (1u << (fp32_mantissa_length - mantissa_length)) - 1;
 	const uint32_t bitstring = xf_bitstring{value}.bitstring;
 
 	const uint32_t c0 = bitstring & (1u << (fp32_mantissa_length - mantissa_length - 1));
