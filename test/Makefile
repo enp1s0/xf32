@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=-std=c++11 -I../
+CXXFLAGS=-std=c++14 -I../
 TARGET=xf32.test
 
 $(TARGET):main.cpp
